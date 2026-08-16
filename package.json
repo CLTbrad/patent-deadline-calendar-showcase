@@ -1,0 +1,1 @@
+{"name":"patent-deadline-calendar-showcase","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite","build":"vite build"},"dependencies":{"@base44/sdk":"^0.8.42","@vitejs/plugin-react":"^4.3.4","vite":"^6.0.5","react":"^18.3.1","react-dom":"^18.3.1","lucide-react":"^0.475.0"}}

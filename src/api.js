@@ -1,0 +1,1 @@
+import{createClient}from'@base44/sdk';const client=createClient({appId:'69080a3dc188f139d47cf6a5',requiresAuth:false});export async function loadDeadlines(){const r=await client.functions.invoke('getCharlottePublicDeadlines',{});if(r.data?.error)throw new Error(r.data.error);return r.data}
