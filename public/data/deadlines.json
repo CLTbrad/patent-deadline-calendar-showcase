@@ -1,0 +1,57 @@
+{
+  "organization_name": "Example Research Organization",
+  "generated_at": "2026-09-07T12:00:00.000Z",
+  "data_mode": "demo",
+  "source": "Demonstration records",
+  "events": [
+    {
+      "id": "demo-1",
+      "type": "prosecution",
+      "due_date": "2026-10-15",
+      "application_number": "17123456",
+      "title": "Adaptive sensing and control platform",
+      "inventor_list": "Alex Morgan; Jordan Lee",
+      "source_event": "Non-Final Office Action",
+      "filing_date": "2023-04-12",
+      "grace_end": "2027-01-15",
+      "is_estimated": false
+    },
+    {
+      "id": "demo-2",
+      "type": "prosecution",
+      "due_date": "2026-11-08",
+      "application_number": "18123456",
+      "title": "Distributed energy optimization system",
+      "inventor_list": "Taylor Brooks",
+      "source_event": "Restriction Requirement",
+      "filing_date": "2024-02-20",
+      "grace_end": "2027-02-08",
+      "is_estimated": false
+    },
+    {
+      "id": "demo-3",
+      "type": "maintenance",
+      "due_date": "2026-12-03",
+      "patent_number": "11234567",
+      "application_number": "16123456",
+      "title": "Secure data processing architecture",
+      "inventor_list": "Casey Rivera",
+      "source_event": "3.5-year maintenance fee",
+      "filing_date": "2020-06-18",
+      "stage": "3.5y",
+      "is_estimated": true
+    },
+    {
+      "id": "demo-4",
+      "type": "prosecution",
+      "due_date": "2027-01-22",
+      "application_number": "19123456",
+      "title": "Precision materials inspection method",
+      "inventor_list": "Riley Chen; Avery Patel",
+      "source_event": "Final Rejection",
+      "filing_date": "2024-09-05",
+      "grace_end": "2027-04-22",
+      "is_estimated": true
+    }
+  ]
+}
