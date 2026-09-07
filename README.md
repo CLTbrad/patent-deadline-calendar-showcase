@@ -1,7 +1,5 @@
 # Patent Deadline Calendar
 
-[![Deploy GitHub Pages](https://github.com/CLTbrad/patent-deadline-calendar-showcase/actions/workflows/deploy.yml/badge.svg)](https://github.com/CLTbrad/patent-deadline-calendar-showcase/actions/workflows/deploy.yml)
-[![Sync USPTO Data](https://github.com/CLTbrad/patent-deadline-calendar-showcase/actions/workflows/sync-uspto.yml/badge.svg)](https://github.com/CLTbrad/patent-deadline-calendar-showcase/actions/workflows/sync-uspto.yml)
 
 A forkable, read-only patent deadline calendar that turns public USPTO Patent Center data into calendar, card, and list views. API credentials stay in GitHub Actions secrets and are never shipped to the browser.
 
