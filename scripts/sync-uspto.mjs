@@ -1,5 +1,5 @@
 import fs from'node:fs/promises';import path from'node:path';
-const key=process.env.USPTO_API_KEY;if(!key)throw new Error('USPTO_API_KEY is required. Add it as a GitHub Actions secret.');
+const key=process.env.USPTO_API_KEY;if(!key){console.log('USPTO_API_KEY is not configured; keeping the existing sample data and skipping live sync.');process.exit(0);}
 const configPath=process.env.PORTFOLIO_CONFIG||'config/portfolio.json';let cfg;try{cfg=JSON.parse(await fs.readFile(configPath,'utf8'))}catch{throw new Error('Create config/portfolio.json from config/portfolio.example.json.');}
 const digits=v=>String(v||'').replace(/\D/g,'');const apps=[...new Set((cfg.applications||[]).map(digits).filter(Boolean))];const limit=Math.min(2000,Math.max(1,Number(cfg.maximum_results)||500));if(!apps.length&&!cfg.search_query)throw new Error('Add application numbers or a USPTO search_query to config/portfolio.json.');
 const endpoint='https://api.uspto.gov/api/v1/patent/applications/search';const sleep=ms=>new Promise(r=>setTimeout(r,ms));
